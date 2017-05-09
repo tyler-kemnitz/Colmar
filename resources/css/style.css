@@ -2,8 +2,7 @@
 html{
     font-size: 16px;
     line-height: 1.4;
-    font-family: Helvetica, sans-serif;
-    line-height: 1.4;
+    font-family: "Raleway", sans-serif;
 }
 .content{
     display: flex;
@@ -12,8 +11,13 @@ html{
     padding: 1.875rem;
 }
 h1{
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 3rem;
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+}
+h3{
+    font-size: 1.5rem;
+    font-family: "Cabin", sans-serif;
 }
 /* Header */
 header{
@@ -32,7 +36,11 @@ header .logo{
     padding-left: 1.5rem;
     margin-right: 1rem;
 }
+#name{
+    font-family: "Cabin", sans-serif;
+}
 #academy{
+    font-family: "Cabin", sans-serif;
     color:grey;
 }
 header nav ul{
