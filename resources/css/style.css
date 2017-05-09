@@ -80,9 +80,11 @@ nav li{
 .learn .button{
     padding: 0.75rem;
     background-color: #3D3D40;
-    color: white;
     text-align: center;
     font-size: 1rem;
+}
+.learn .button a{
+    color: white;
 }
 /* Practice Info */
 .practice{
@@ -143,6 +145,7 @@ p{
 /* Courses */
 .courses{
     background-color: #DADBE5;
+    padding-bottom: 1rem;
 }
 .course-content{
     display: flex;
@@ -155,14 +158,21 @@ p{
     padding: 2rem;
 }
 .course{
-    padding: 2rem;
+    padding: 1rem;
+    max-width: 25%;
+}
+.course img{
+    width: 100%;
+    height: auto;
 }
 .description{
     display: flex;
+    line-height: 1.4;
     flex-direction: column;
     padding: 1rem 1rem 1.5rem 1rem;
     background-color: white;
 }
 .description span{
+    color: #3D3D40;
     padding-top: 0.5rem;
 }
