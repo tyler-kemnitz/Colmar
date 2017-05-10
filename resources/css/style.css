@@ -19,6 +19,11 @@ h3{
     font-family: "Cabin", sans-serif;
     font-weight: bold;
 }
+.heading{
+    text-align: center;
+    display: block;
+    padding: 2rem;
+}
 /* Header */
 header{
     position: fixed;
@@ -86,33 +91,33 @@ nav li{
 .learn .button a{
     color: white;
 }
-/* Practice Info */
-.practice{
+/* Practice & Thesis Structure */
+.container{
     display: flex;
+    padding-top: 1rem;
     margin-bottom: 1.5rem;
 }
-.practice-left{
+.contain-left{
     flex-direction: column;
     padding-left: 1.875rem;
 }
-.practice-left h1,
+.contain-left h1,
 p{
     margin-bottom: 1.5rem;
 }
-.practice-image{
+.visual-container{
     max-width: 87%;
     height: auto;
-    margin: 2rem 1.5rem;
+    margin-top: 1rem;
 }
-#study{
+.visual{
     width: 100%;
     height: auto;
 }
-.practice-right{
+.contain-right{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-left: solid #DADBE5 1px;
 }
 .info{
     display: flex;
@@ -132,15 +137,19 @@ p{
 .text span{
     padding-bottom: 0.5rem;
 }
-.text a{
-    color: dodgerblue;
-}
 #gray{
     background-color: #DADBE5;
 }
 .border{
     padding-top: 0.5rem;
     border-bottom: solid #DADBE5 1px;
+}
+/* Practice Only */
+.text a{
+    color: dodgerblue;
+}
+#practice-border{
+    border-left: solid #DADBE5 1px;
 }
 /* Courses */
 .courses{
@@ -151,11 +160,6 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-#course-title{
-    text-align: center;
-    display: block;
-    padding: 2rem;
 }
 .course{
     padding: 1rem;
@@ -175,4 +179,17 @@ p{
 .description span{
     color: #3D3D40;
     padding-top: 0.5rem;
+}
+/* Thesis Only */
+
+/* Footer */
+footer{
+    padding: 1.5rem 2rem 4rem 2rem;
+    border-top: solid #DADBE5 1px;
+}
+.footer{
+    display: flex;
+}
+.copyright{
+    flex-grow: 1;
 }
