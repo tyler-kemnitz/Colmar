@@ -55,9 +55,31 @@ header nav ul{
 }
 header nav ul li a:hover{
     color: dodgerblue;
+    transition: 250ms;
 }
 nav li{
     padding-left: 1.5rem;
+}
+header .mobile{
+    display: none;
+}
+@media only screen and (max-width: 760px){
+    header .desktop{
+        display: none;
+    }
+    header .mobile{
+        display: block;
+        width: 100%;
+    }
+    header .mobile ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    header .mobile ul li{
+        padding: 0;
+    }
 }
 /* Jumbotron */
 .content.banner{
@@ -86,6 +108,7 @@ nav li{
 .learn h3{
     font-size: 1.5rem;
 }
+/* Button Goals */
 .learn .button{
     border-radius: 4px;
     padding: 0.75rem;
@@ -121,6 +144,7 @@ nav li{
 .learn .button a{
     color: white;
 }
+/*End of Jumbotron */
 /* Practice & Thesis Structure */
 .contain-left h1,
 p{
