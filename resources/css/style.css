@@ -53,6 +53,9 @@ header nav ul{
     display: flex;
     margin-right: 3rem;
 }
+header nav ul li a:hover{
+    color: dodgerblue;
+}
 nav li{
     padding-left: 1.5rem;
 }
@@ -73,6 +76,7 @@ nav li{
 .learn{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding: 0.5rem;
 }.learn h1,
@@ -83,10 +87,36 @@ nav li{
     font-size: 1.5rem;
 }
 .learn .button{
+    border-radius: 4px;
     padding: 0.75rem;
+    margin-top: 0.5rem;
     background-color: #3D3D40;
+    width: 20rem;
     text-align: center;
     font-size: 1rem;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.learn .button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.learn .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.learn .button:hover span {
+  padding-right: 25px;
+}
+.learn .button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 .learn .button a{
     color: white;
