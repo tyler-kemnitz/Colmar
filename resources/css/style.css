@@ -92,21 +92,13 @@ nav li{
     color: white;
 }
 /* Practice & Thesis Structure */
-.container{
-    display: flex;
-    padding-top: 1rem;
-    margin-bottom: 1.5rem;
-}
-.contain-left{
-    flex-direction: column;
-    padding-left: 1.875rem;
-}
 .contain-left h1,
 p{
+    margin-top: 1rem;
     margin-bottom: 1.5rem;
 }
 .visual-container{
-    max-width: 87%;
+    max-width: 95%;
     height: auto;
     margin-top: 1rem;
 }
@@ -181,7 +173,9 @@ p{
     padding-top: 0.5rem;
 }
 /* Thesis Only */
-
+#thesis{
+    padding-top: 0;
+}
 /* Footer */
 footer{
     padding: 1.5rem 2rem 4rem 2rem;
