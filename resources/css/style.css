@@ -114,8 +114,9 @@ header .mobile{
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
-}.learn h1,
- h3{
+}
+.learn h1,
+.learn h3 {
     margin-bottom: 1rem;
 }
 .learn h3{
@@ -170,9 +171,8 @@ p{
     margin-bottom: 1.5rem;
 }
 .visual-container{
-    max-width: 95%;
     height: auto;
-    margin-top: 1rem;
+    margin-right: 1.5rem;
 }
 .visual{
     width: 100%;
@@ -244,9 +244,12 @@ p{
         height: auto;
         padding-bottom: 1rem;
     }
+    .mobile-learn h3{
+        padding: 0.5rem;
+    }
 }
 /* Courses */
-.courses{
+.desktop-courses{
     background-color: #DADBE5;
     padding-bottom: 1rem;
 }
@@ -274,9 +277,45 @@ p{
     color: #3D3D40;
     padding-top: 0.5rem;
 }
+.mobile-courses{
+    display: none;
+}
+@media only screen and (max-width: 760px){
+    .desktop-courses{
+        display: none;
+    }
+    .mobile-courses{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile-course{
+        padding: 1rem;
+        background-color: #DADBE5;
+        margin: 0.25rem 1rem 0.25rem 1rem;
+        width: 85%;
+    }
+    .mobile-course h3{
+        padding: 1rem;
+    }
+}
 /* Thesis Only */
 #thesis{
     padding-top: 0;
+}
+#thesis .info{
+    height: 168px;
+}
+#thesis .info img{
+    width: 55%;
+    height: auto;
+}
+@media only screen and (max-width: 760px) {
+    #thesis .contain-right,
+    #thesis h1,
+    #thesis p {
+        display: none;
+    }
 }
 /* Footer */
 footer{
