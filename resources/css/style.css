@@ -186,7 +186,6 @@ p{
 .info{
     display: flex;
     padding: 1rem;
-    border-bottom: solid #DADBE5 1px;
 }
 .info .desktop-img{
     width: 35%;
